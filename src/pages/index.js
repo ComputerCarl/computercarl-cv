@@ -16,6 +16,7 @@ import imgWhiteboard from '../images/whiteboard.jpg';
 import imgGreenAbstract from '../images/green-abstract-bg.jpg';
 import imgHumanBG from '../images/human-bg.jpg';
 import imgHumanGirls from '../images/human-girls.jpg';
+import ResumeForm from '../components/resume-form';
 import SEO from '../components/seo';
 import loadScript from '../load-script';
 // import tawkTo from '../tawk-to';
@@ -224,6 +225,7 @@ const SPA = (props) => {
       >
       </SEO>
       <PageStyle />
+      <ShareBox />
       <Ribbon>
         <h2>Call Now:</h2>
         <h1><a href="tel:19192834112">1.919.283.4112</a></h1>
@@ -269,8 +271,7 @@ const SPA = (props) => {
                 </div>
               </Col>
               <Col span={8}>
-                <ShareBox />
-                <img src={ServiceGuy} />
+                <ResumeForm />
               </Col>
             </Row>
           </Contained>
@@ -281,18 +282,21 @@ const SPA = (props) => {
 
       <section id="pick-me">
         <Contained>
-          <h1 style={{ textAlign: 'center' }}>
-            Are you tired of training prospects instead of providing support?
-            </h1>
+
           <Row type="flex" justify="space-between" align="center">
             <Col span={8}>
-              <img src={imgWhiteboard} style={{
+              {/* <img src={imgWhiteboard} style={{
                 margin: '0 20px',
                 borderRadius: '0px 50px',
                 height: '200px'
-              }} />
+              }} /> */}
+              <img src={ServiceGuy} style={{ height: '300px' }} />
+
             </Col>
             <Col span={16}>
+              <h1 style={{ textAlign: 'center' }}>
+                Are you tired of training prospects instead of providing support?
+            </h1>
               <p>
                 Get a jump-start by hiring a service representative already versed in many of today's technologies.
                 </p><p>

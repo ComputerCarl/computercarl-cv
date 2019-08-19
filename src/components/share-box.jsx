@@ -9,8 +9,8 @@ const StyledBox = styled.div`
   position: fixed;
   top: 25%;
   // right: 10px;
-  right: 0;
-  z-index: 97;
+  left: 0;
+  z-index: 99;
   .share-label {
     display: flex;
     flex-direction: column;
@@ -57,13 +57,7 @@ export default () => {
   const [shareLabel, setLabel] = useState(null);
   return (
     <StyledBox>
-      {shareLabel &&
-        <div className="share-label">
-          <span>
-            {shareLabel}
-          </span>
-        </div>
-      }
+
       <div className="share-items">
         {shareItems.map((item, i) => (
           <a href={item.link} target={item.newWindow ? '_new' : null}>
@@ -77,6 +71,13 @@ export default () => {
         )
         )}
       </div>
+      {shareLabel &&
+        <div className="share-label">
+          <span>
+            {shareLabel}
+          </span>
+        </div>
+      }
     </StyledBox>
   )
 }
