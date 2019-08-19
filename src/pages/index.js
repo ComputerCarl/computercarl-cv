@@ -294,14 +294,14 @@ const SPA = (props) => {
 
             </Col>
             <Col span={16}>
-              <h1 style={{ textAlign: 'center' }}>
+              <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
                 Are you tired of training prospects instead of providing support?
             </h1>
               <p>
                 Get a jump-start by hiring a service representative already versed in many of today's technologies.
                 </p><p>
                 I want to be your newest customer service rep, and I've built this page to prove it.
-                Please feel free to ask any questions and I will get back to you right away.
+                Please feel free to ask any questions, or use the form above to view my resume, and I will get back to you right away.
               </p>
             </Col>
           </Row>

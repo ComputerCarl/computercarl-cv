@@ -47,7 +47,7 @@ const StyledBox = styled.div`
 
 export default () => {
   const shareItems = [
-    { icon: 'fa-download.svg', label: 'Download Resume', link: '/carl-mann-resume.pdf', newWindow: true },
+    // { icon: 'fa-download.svg', label: 'Download Resume', link: '/carl-mann-resume.pdf', newWindow: true },
     { icon: 'fa-facebook.svg', label: 'Share on Facebook', link: 'https://www.facebook.com/sharer/sharer.php?u=https://computercarl.com', newWindow: true },
     // { icon: 'fa-instagram.svg', label: 'Share on Instagram', link: '', newWindow: true },
     // { icon: 'fa-pinterest.svg', label: 'Share on Pinterest', link: 'https://pinterest.com/pin/create/button/?url=&media=https://computercarl.com&description=', newWindow: true },
