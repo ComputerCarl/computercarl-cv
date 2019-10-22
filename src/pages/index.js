@@ -207,6 +207,7 @@ const SPA = (props) => {
   useEffect(() => {
     loadScript('/js/live-helper.js');
     loadScript('/js/matomo.js');
+    loadScript('/js/mautic.js');
     // loadScript('/js/tawk-to.js');
     toggleLive(true); // [] use this for the carousel later
 

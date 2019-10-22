@@ -37,15 +37,20 @@ const MauticForm = styled.div`
 
 
 export default () => {
+  const [isLive, setLive] = useState(false);
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://bff.adstute.com/form/generate.js?id=4';
     script.async = true;
     document.querySelector('#resume-form').append(script);
+    setLive(true);
   }, []);
   return (<FormBox>
     <H1>
-      <img width="300" src="/images/header-content.png" alt="Fill Form to DL Resume" />
+      {isLive ?
+        <img width="300" src="/images/header-content.png" alt="Fill Form to DL Resume" /> :
+        <img width="300" src="/images/header-content-pre.jpg" alt="Fill Form to DL Resume" />
+      }
     </H1>
     <MauticForm id='resume-form' />
   </FormBox>)
