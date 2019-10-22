@@ -259,7 +259,7 @@ const SPA = (props) => {
                     With the myriad of modern-day technologies such as XaaS, machine learning, development platforms, databases and microservices, it's easy to drown in information.
               </p><p className="white indent">
                   This is where I can help.
-                  For over 20 years, I have provided solutions trusted by hundreds of businesses, families, and government agencies.
+                  For over 15 years, I have provided solutions trusted by hundreds of businesses, families, and government agencies.
                   I would like an opportunity to earn that trust from you.
               </p>
                 <div className="center">
