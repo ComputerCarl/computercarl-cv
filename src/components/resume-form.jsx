@@ -8,8 +8,11 @@ const FormBox = styled.div`
     background-color: rgba(255,255,255,0.9);
     border: 1px solid grey;
     border-radius: 10px;
-    
+    /* static to set from jarring page */
+    min-width: 340px;
+    min-height: 448px;
     `
+
 const H1 = styled.div`
     background-color: #2F729C;
     border: 1px solid grey;
@@ -33,8 +36,6 @@ const MauticForm = styled.div`
     text-align: center;
   }
 `
-
-
 
 export default () => {
   const [isLive, setLive] = useState(false);

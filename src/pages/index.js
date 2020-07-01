@@ -21,6 +21,7 @@ import SEO from '../components/seo';
 import loadScript from '../load-script';
 // import tawkTo from '../tawk-to';
 import ShareBox from '../components/share-box';
+import devBg from '../images/development.png';
 
 const Row = styled.div`
   ${({ align, justify }) => `
@@ -53,6 +54,7 @@ html, body {
 h1 {
   font-family: Raleway, sans-serif;
   font-weight: normal;
+  font-size: 2em;
 }
 
 p {
@@ -204,20 +206,14 @@ const SPA = (props) => {
   let isClient;
   const [hidden, toggleHidden] = useState(false);
   const [isLive, toggleLive] = useState(false);
+
   useEffect(() => {
     loadScript('/js/live-helper.js');
     loadScript('/js/matomo.js');
     loadScript('/js/mautic.js');
-    // loadScript('/js/tawk-to.js');
     toggleLive(true); // [] use this for the carousel later
+  }, []);
 
-    // no use setting variables; no re-render after this is run
-    // example "isLive = true;" will not affect the app
-    // what are you thinking? Use props! React - props change, app changes!
-    // const [whatever, updateWhatever] = useEffect({a: 1})
-    // updateWhatever({a: 2})
-
-  });
   return (
     <>
       <SEO
@@ -232,9 +228,9 @@ const SPA = (props) => {
         <h1><a href="tel:19192834112">1.919.283.4112</a></h1>
       </Ribbon>
       <NavBar>
-        <div>Instant solution to your customer service needs. Call or chat now!</div>
+        <div>Instant solution to your development needs. Call or chat now!</div>
       </NavBar>
-      {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} /> */}
+
       <section id='header'>
         <BackgroundImage
           Tag="div"
@@ -244,27 +240,19 @@ const SPA = (props) => {
             backgroundSize: '100% 100%'
           }}
         >
-          {/* <Fully style={{
-          backgroundImage: `url(${props.data.imageOne.childImageSharp.fluid.src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: '100% 100%'
-        }}> */}
-          {/* <Fully style={{ backgroundColor: '#005' }}> */}
           <Contained>
             <Row type="flex" justify="space-between">
               <Col span={16}>
                 <img src={svgCarlMann} /><br />
                 <p className="white indent">
-                  Finding a versatile technical service agent can be a daunting process.
-                    With the myriad of modern-day technologies such as XaaS, machine learning, development platforms, databases and microservices, it's easy to drown in information.
+                  With the myriad of modern-day technologies such as XaaS, machine learning, development platforms, databases and micro-services, it's easy to drown in information.
               </p><p className="white indent">
                   This is where I can help.
-                  For over 15 years, I have provided solutions trusted by hundreds of businesses, families, and government agencies.
+                  For over 15 years, I have provided solutions trusted by hundreds of people, businesses, and government agencies.
                   I would like an opportunity to earn that trust from you.
               </p>
                 <div className="center">
                   <ContactButton
-                    // onClick={() => toggleHidden(!hidden)}
                     onClick={() => window.scrollTo(0, document.body.scrollHeight)}
                   >
                     Contact Carl
@@ -281,29 +269,41 @@ const SPA = (props) => {
       </section>
 
 
-      <section id="pick-me">
+      <section id="developer">
         <Contained>
-
           <Row type="flex" justify="space-between" align="center">
-            <Col span={8}>
-              {/* <img src={imgWhiteboard} style={{
-                margin: '0 20px',
-                borderRadius: '0px 50px',
-                height: '200px'
-              }} /> */}
+            <Col span={1}>
               <img src={ServiceGuy} style={{ height: '300px' }} />
-
             </Col>
-            <Col span={16}>
+            <Col span={4}>
               <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                Are you tired of training prospects instead of providing support?
+                Carl Mann, Software Developer
             </h1>
-              <p>
-                Get a jump-start by hiring a service representative already versed in many of today's technologies.
+              <img src={devBg} style={{
+                width: '500px',
+                position: 'absolute',
+                zIndex: '-1',
+                filter: 'opacity(0.1)',
+                marginTop: '-125px',
+                marginLeft: '75px'
+              }} alt="" />
+              <Row type="flex" justify="space-between" align="center">
+                <Col span={8}>
+                  <p>
+                    Are you looking to create your next product using modern software development?
                 </p><p>
-                I want to be your newest customer service rep, and I've built this page to prove it.
-                Please feel free to ask any questions, or use the form above to view my resume, and I will get back to you right away.
+                    My expertise in JavaScript, Node JS, React JS, Gatsby JS, and a whole lot more JS's (JavaScript libraries) can help you not only get your product to market faster, but with less errors and more resiliency, while also improving usability and functionality.
               </p>
+                </Col>
+                <Col span={8}>
+                  <p>
+                    JavaScript, really?
+            </p><p>
+                    Almost since web development became a thing, JavaScript (JS) has been in the background wiring web apps to make stuff happen.
+                    HTML provides the structure, CSS provides styling, and JS provides not only the (advanced) interactivity – but with the advent of Node (server-side JS), now JS can power the entire stack.
+            </p>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Contained>
@@ -338,12 +338,12 @@ const SPA = (props) => {
                 <b>DevOps:</b> Docker, VirtualBox, Hyper-V, Linode, Vagrant, Azure, Heroku, CapRover
 
                 <h2>Desktop &amp; Design</h2>
-                <b>Produtivity</b>: Windows, Ubuntu, Debian, CentOS, (limited Mac) Microsft Office Suites, Exchange Server, QuickBooks<br />
+                <b>Productivity</b>: Windows, Ubuntu, Debian, CentOS, (limited Mac) Microsoft Office Suites, Exchange Server, QuickBooks<br />
                 <b>Raster Graphics</b>: Adobe Photoshop, GIMP<br />
-                <b>Vector Graphics</b>: DrawPlus, CorelDraw, InkScape<br />
+                <b>Vector Graphics</b>: Affinity Designer, DrawPlus, CorelDraw, InkScape<br />
                 <b>Video/Animation</b>: Sony Movie Studio, AnimeStudio<br />
                 <br />
-                <b>...and dozens more!</b>
+                <b>...and hundreds more!</b>
               </Col>
             </Row>
           </Contained>
@@ -383,20 +383,20 @@ const SPA = (props) => {
           <h1>Advantages</h1>
           <Row type="flex" justify="space-between" align="bottom" gutter={24}>
             <Col span={8}>
-              <img src="/images/a1.jpg" />
-              <h2>English Native</h2>
-              <p>Born and raised on Long Island, N.Y, I had the advantage of learning English since birth - a privilege not shared by agents of many other countries.</p>
+              <img src="/images/a3.jpg" />
+              <h2>Well-Equipped</h2>
+              <p>My workstation is equipped with modern specifications and software, including an HD screen, tons of RAM, SSD storage, and an up-to-date development IDE.</p>
             </Col>
             <Col span={8}>
               <img src="/images/a2.jpg" />
               <h2>Versatile Schedule</h2>
               <p>Typically, I'm a morning person and prefer the "up and at 'em" lifestyle.
-              Nevertheless, that doesn't mean I'm inflexible to keeping odd hours when needed.</p>
+              Nevertheless, I'll complete tasks at times in tune with your team, and in your time frame.</p>
             </Col>
             <Col span={8}>
-              <img src="/images/a3.jpg" />
-              <h2>Well Equipped</h2>
-              <p>My workspace is already equipped with fast Internet and modern equipment; including a GPU and 4K screen for the ultimate in multi-tasking and development.</p>
+              <img src="/images/a1.jpg" />
+              <h2>English Native</h2>
+              <p>Born and raised on Long Island, N.Y, I had the advantage of learning English since birth, and have an expert knowledge in this <i>lingua franca</i>.</p>
             </Col>
           </Row>
         </Contained>
