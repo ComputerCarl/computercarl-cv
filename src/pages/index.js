@@ -6,22 +6,27 @@ import styled, { createGlobalStyle } from 'styled-components';
 // import 'antd/lib/grid/style/index.css';
 import { graphql } from 'gatsby';
 // import Img from 'gatsby-image';
-import ServiceGuy from '../images/carl-tablet.svg';
 // import ParticleEffectButton from 'react-particle-effect-button'
-import BackgroundImage from 'gatsby-background-image';
+
+
 import Ribbon from '../components/ribbon';
-import svgCarlMann from '../images/carlmann.svg';
-import svgGreyCurve from '../images/grey-curve.svg';
-import imgWhiteboard from '../images/whiteboard.jpg';
-import imgGreenAbstract from '../images/green-abstract-bg.jpg';
-import imgHumanBG from '../images/human-bg.jpg';
-import imgHumanGirls from '../images/human-girls.jpg';
-import ResumeForm from '../components/resume-form';
 import SEO from '../components/seo';
 import loadScript from '../load-script';
 // import tawkTo from '../tawk-to';
 import ShareBox from '../components/share-box';
-import devBg from '../images/development.png';
+import ResumeForm from '../components/ResumeForm';
+
+
+import BackgroundImage from 'gatsby-background-image';
+import ServiceGuy from '../images/carl-tablet.svg';
+import svgCarlMann from '../images/carlmann.svg';
+import svgGreyCurve from '../images/grey-curve.svg';
+// import imgWhiteboard from '../images/whiteboard.jpg';
+import imgGreenAbstract from '../images/green-abstract-bg.jpg';
+import imgHumanBG from '../images/human-bg.jpg';
+import imgHumanGirls from '../images/human-girls.jpg';
+import imgDevBg from '../images/development.png';
+
 
 const Row = styled.div`
   ${({ align, justify }) => `
@@ -44,73 +49,9 @@ const Col = ({ children, span, style }) => (<div
   style={{ flex: `${span} 0`, ...style }}>{children}
 </div>);
 
-const PageStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap');
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: Open Sans, Helvetica, sans-serif;
-}
-h1 {
-  font-family: Raleway, sans-serif;
-  font-weight: normal;
-  font-size: 2em;
-}
+// const PageStyle = createGlobalStyle`
 
-p {
-  font-size: 1.2em;
-}
-
-  .main-copy {
-  margin-left: 5%;
-  color: mistyrose;
-}
-  .white {
-  color: white;
-}
-  .indent {
-  margin-left: 5%;
-}
-  .center {
-  text-align: center;
-}
-ul.contact { margin: 0; }
-ul.contact li {
-  margin: 10px 3px;
-}
-ul.contact, ul.contact a: link, ul.contact a: visited {
-  color: mistyrose;
-  font-size: 14pt;
-  text-decoration: none;
-  font-weight: normal;
-}
-li.fa-email { list-style-image: url(/images/fa-email.svg); }
-li.fa-phone { list-style-image: url(/images/fa-phone.svg); }
-li.fa-pin { list-style-image: url(/images/fa-pin.svg); }
-li.fa-skype { list-style-image: url(/images/fa-skype.svg); }
-li.fa-link { list-style-image: url(/images/fa-link.svg); }
-section#roles h1 {
-  margin: -38px auto auto;
-  border-radius: 0 0 10px 10px;
-  width: 40%;
-}
-section#advantages h1 {
-  text-align: center;
-}
-section#advantages img {
-  margin: auto;
-  position: relative;
-  display: block;
-}
-section#advantages h2 {
-  text-align: center;
-  border-bottom: 2px solid #b3e2e9;
-  text-transform: uppercase;
-  margin: 3px;
-  font-weight: normal;
-}
-
-`
+// `
 
 const ContactButton = styled.div`
 background-color: darkblue;
@@ -221,7 +162,7 @@ const SPA = (props) => {
         image="/images/og-header.jpg"
       >
       </SEO>
-      <PageStyle />
+      {/* <PageStyle /> */}
       <ShareBox />
       <Ribbon>
         <h2>Call Now:</h2>
@@ -279,7 +220,7 @@ const SPA = (props) => {
               <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
                 Carl Mann, Software Developer
             </h1>
-              <img src={devBg} style={{
+              <img src={imgDevBg} style={{
                 width: '500px',
                 position: 'absolute',
                 zIndex: '-1',

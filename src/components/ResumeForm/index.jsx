@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import loadScript from '../load-script';
+// import loadScript from '../load-script';
+import imgFormPlaceHolder from './form-placeholder.jpg';
 
 const FormBox = styled.div`
   box-sizing: border-box;
@@ -20,7 +21,7 @@ const H1 = styled.div`
     `
 
 const MauticForm = styled.div`
-  padding: 0 15px;
+  background-size: cover;
   text-align: left;
   input::placeholder {
     color: #bbb;
@@ -37,6 +38,10 @@ const MauticForm = styled.div`
   }
 `
 
+const LowerFormArea = styled.div`
+  padding: 10px;
+`
+
 export default () => {
   const [isLive, setLive] = useState(false);
   useEffect(() => {
@@ -44,8 +49,12 @@ export default () => {
     script.src = 'https://bff.adstute.com/form/generate.js?id=4';
     script.async = true;
     document.querySelector('#resume-form').append(script);
-    setLive(true);
+    script.addEventListener('load', () => {
+      console.log('islive');
+      setLive(true);
+    })
   }, []);
+
   return (<FormBox>
     <H1>
       {isLive ?
@@ -53,6 +62,11 @@ export default () => {
         <img width="300" src="/images/header-content-pre.jpg" alt="Fill Form to DL Resume" />
       }
     </H1>
-    <MauticForm id='resume-form' />
+    <LowerFormArea id="resume-form">
+      {isLive ?
+        <MauticForm /> :
+        <div>hi!</div>
+      }
+    </LowerFormArea>
   </FormBox>)
 }
