@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 // import loadScript from '../load-script';
 import imgFormPlaceHolder from './form-placeholder.jpg';
+import Loader from '../Loader';
 
 const FormBox = styled.div`
   box-sizing: border-box;
@@ -50,7 +51,6 @@ export default () => {
     script.async = true;
     document.querySelector('#resume-form').append(script);
     script.addEventListener('load', () => {
-      console.log('islive');
       setLive(true);
     })
   }, []);
@@ -65,7 +65,7 @@ export default () => {
     <LowerFormArea id="resume-form">
       {isLive ?
         <MauticForm /> :
-        <div>hi!</div>
+        <Loader />
       }
     </LowerFormArea>
   </FormBox>)
