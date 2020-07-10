@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+  .main-copy {
+  margin-left: 5%;
+  color: mistyrose;
+}
+  .white {
+  color: white;
+}
+  .indent {
+  margin-left: 5%;
+}
+  .center {
+  text-align: center;
+}
+ul.contact { margin: 0; }
+ul.contact li {
+  margin: 10px 3px;
+}
+ul.contact, ul.contact a: link, ul.contact a: visited {
+  color: mistyrose;
+  font-size: 14pt;
+  text-decoration: none;
+  font-weight: normal;
+}
+li.fa-email { list-style-image: url(/images/fa-email.svg); }
+li.fa-phone { list-style-image: url(/images/fa-phone.svg); }
+li.fa-pin { list-style-image: url(/images/fa-pin.svg); }
+li.fa-skype { list-style-image: url(/images/fa-skype.svg); }
+li.fa-link { list-style-image: url(/images/fa-link.svg); }
+section#roles h1 {
+  margin: -38px auto auto;
+  border-radius: 0 0 10px 10px;
+  width: 40%;
+}
+section#advantages h1 {
+  text-align: center;
+}
+section#advantages img {
+  margin: auto;
+  position: relative;
+  display: block;
+}
+section#advantages h2 {
+  text-align: center;
+  border-bottom: 2px solid #b3e2e9;
+  text-transform: uppercase;
+  margin: 3px;
+  font-weight: normal;
+}
