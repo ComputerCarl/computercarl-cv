@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-// import loadScript from '../load-script';
-import imgFormPlaceHolder from './form-placeholder.jpg';
 import Loader from '../Loader';
 
 const FormBox = styled.div`
