@@ -16,6 +16,8 @@ import SectionHumans from '../sections/SectionHumans';
 import SectionRoles from '../sections/SectionRoles'
 import SectionSlider from '../sections/SectionSlider';
 
+import '../style.css';
+
 const NavBar = styled.div`
     box-sizing: border-box;
     background-color: rgb(50, 60, 70);
@@ -59,8 +61,8 @@ const SPA = (props) => {
             <SectionDeveloper />
             <SectionSkills />
             <SectionHumans />
-            <SectionRoles />
             <SectionAdvantages />
+            <SectionRoles />
             <SectionSlider />
             <SectionFooter />
         </>
