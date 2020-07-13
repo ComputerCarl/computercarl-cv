@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Loader from '../Loader';
+import Loader from '../SimpleSpinner';
 
 const FormBox = styled.div`
   box-sizing: border-box;
@@ -19,7 +19,7 @@ const H1 = styled.div`
     border-radius: 9px 9px 0 0;
     `
 
-const MauticForm = styled.div`
+const MauticStyling = styled.div`
   background-size: cover;
   text-align: left;
   input::placeholder {
@@ -61,10 +61,8 @@ export default () => {
       }
     </H1>
     <LowerFormArea id="resume-form">
-      {isLive ?
-        <MauticForm /> :
-        <Loader />
-      }
+      <MauticStyling />
+      {!isLive && <Loader />}
     </LowerFormArea>
   </FormBox>)
 }
