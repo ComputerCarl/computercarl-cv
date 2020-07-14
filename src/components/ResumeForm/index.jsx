@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Loader from '../SimpleSpinner';
 
+import svgResumeWord from './resume-word.svg';
+import svgRocket from './upchunk-rocket.svg';
+
 const FormBox = styled.div`
   box-sizing: border-box;
     font-family: sans-serif;
@@ -53,12 +56,27 @@ export default () => {
     })
   }, []);
 
+  const RocketBox = styled.div`
+    color: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  `
+
   return (<FormBox>
     <H1>
-      {isLive ?
+      {/* {isLive ?
         <img width="300" src="/images/header-content.png" alt="Fill Form to DL Resume" /> :
         <img width="300" src="/images/header-content-pre.jpg" alt="Fill Form to DL Resume" />
-      }
+      } */}
+      <RocketBox>
+        <div>
+          <img src={svgRocket} width="100px" />
+        </div><div align="center">
+          <span style={{ fontSize: '1.1em', marginTop: '5px', display: 'inline-block' }}>Enter your contact info below to access my</span>
+          <img src={svgResumeWord} width="200px" />
+        </div>
+      </RocketBox>
     </H1>
     <LowerFormArea id="resume-form">
       <MauticStyling />

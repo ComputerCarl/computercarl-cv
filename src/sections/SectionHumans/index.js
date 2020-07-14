@@ -10,7 +10,7 @@ const SectionHumans = () => {
       <Row type="flex" justify="space-between" align="bottom" gutter={24}>
         <Col span={12} style={{
           backgroundImage: `url(${imgHumanBG})`,
-          padding: '15px;'
+          padding: '15px'
         }}>
           <h1 style={{ textAlign: 'center' }}>The Human Element</h1>
           <p>
