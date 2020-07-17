@@ -43,12 +43,13 @@ const MauticStyling = styled.div`
 const LowerFormArea = styled.div`
   padding: 10px;
 `
+const scriptSrc = '//crm.upchunk.com/form/generate.js?id=1'
 
 export default () => {
   const [isLive, setLive] = useState(false);
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://bff.adstute.com/form/generate.js?id=4';
+    script.src = scriptSrc;
     script.async = true;
     document.querySelector('#resume-form').append(script);
     script.addEventListener('load', () => {
