@@ -81,7 +81,7 @@ export default () => {
     </H1>
     <LowerFormArea id="resume-form">
       <MauticStyling />
-      {!isLive && <Loader />}
+      {!isLive && <><div>Loading form...</div><Loader /></>}
     </LowerFormArea>
   </FormBox>)
 }
