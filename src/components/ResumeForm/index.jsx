@@ -79,9 +79,10 @@ export default () => {
         </div>
       </RocketBox>
     </H1>
-    <LowerFormArea id="resume-form">
-      <MauticStyling />
-      {!isLive && <><div>Loading form...</div><Loader /></>}
-    </LowerFormArea>
+    <MauticStyling >
+      <LowerFormArea id="resume-form">
+        {!isLive && <><div>Loading form...</div><Loader /></>}
+      </LowerFormArea>
+    </MauticStyling>
   </FormBox>)
 }

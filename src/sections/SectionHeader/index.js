@@ -42,7 +42,7 @@ const SectionHeader = props => {
           <img src={svgCarlMann} alt="Carl Mann, Developer & Support Agent" />
           <br />
           <p className="white indent">
-            With the myriad of modern-day technologies such as XaaS, machine learning, development platforms, databases and micro-services, it's easy to drown in information.
+            With the myriad of modern-day technologies such as XaaS, machine learning, development platforms, databases, and micro-services; it's easy to drown in information.
       </p><p className="white indent">
             This is where I can help.
             For over 15 years, I have provided solutions trusted by hundreds of people, businesses, and government agencies.
