@@ -38,7 +38,7 @@ const SPA = (props) => {
     useEffect(() => {
         loadScript('/js/live-helper.js');
         loadScript('/js/matomo.js');
-        // loadScript('/js/mautic.js'); // was this for tracking?
+        loadScript('/js/mautic.js'); // tracking
     }, []);
 
     return (
