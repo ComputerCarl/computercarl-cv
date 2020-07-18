@@ -43,7 +43,8 @@ const MauticStyling = styled.div`
 const LowerFormArea = styled.div`
   padding: 10px;
 `
-const scriptSrc = 'https://crm.upchunk.com/form/generate.js?id=1'
+
+const scriptSrc = 'https://crm.upchunk.com/form/generate.js?id=1';
 
 export default () => {
   const [isLive, setLive] = useState(false);
@@ -66,10 +67,6 @@ export default () => {
 
   return (<FormBox>
     <H1>
-      {/* {isLive ?
-        <img width="300" src="/images/header-content.png" alt="Fill Form to DL Resume" /> :
-        <img width="300" src="/images/header-content-pre.jpg" alt="Fill Form to DL Resume" />
-      } */}
       <RocketBox>
         <div>
           <img src={svgRocket} width="100px" />

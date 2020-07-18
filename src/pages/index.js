@@ -12,6 +12,7 @@ import SectionDeveloper from '../sections/SectionDeveloper';
 import SectionSkills from '../sections/SectionSkills'
 import SectionFooter from '../sections/SectionFooter';
 import SectionHeader from '../sections/SectionHeader';
+import SectionSourceCode from '../sections/SectionSourceCode';
 import SectionHumans from '../sections/SectionHumans';
 import SectionRoles from '../sections/SectionRoles'
 import SectionSlider from '../sections/SectionSlider';
@@ -59,6 +60,7 @@ const SPA = (props) => {
             </NavBar>
             <SectionHeader {...props} />
             <SectionDeveloper />
+            <SectionSourceCode />
             <SectionSkills />
             <SectionHumans />
             <SectionAdvantages />
