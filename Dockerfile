@@ -1,6 +1,6 @@
 # https://medium.com/greedygame-engineering/so-you-want-to-dockerize-your-react-app-64fbbb74c217
 # we want a specified version, not latest
-FROM node:10 as build
+FROM node:12.13 as build
 # set working directory (on Docker Node image)for  all subsequent relative commands will reference
 WORKDIR /usr/src/app
 # copy the Node config files
