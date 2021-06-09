@@ -16,6 +16,7 @@ import SectionSourceCode from '../sections/SectionSourceCode';
 import SectionHumans from '../sections/SectionHumans';
 import SectionRoles from '../sections/SectionRoles'
 import SectionSlider from '../sections/SectionSlider';
+import SectionDomfeed from '../sections/SectionDomfeed';
 
 import '../style.css';
 
@@ -62,6 +63,7 @@ const SPA = (props) => {
             <SectionDeveloper />
             <SectionSourceCode />
             <SectionSkills />
+            <SectionDomfeed />
             <SectionHumans />
             <SectionAdvantages />
             <SectionRoles />
