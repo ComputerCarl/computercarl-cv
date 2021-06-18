@@ -52,13 +52,14 @@ const SPA = (props) => {
             </SEO>
             {/* <PageStyle /> */}
             <ShareBox />
-            <Ribbon>
+            {/* <Ribbon>
                 <h2>Call Now:</h2>
                 <h1><a href="tel:19192834112">1.919.283.4112</a></h1>
-            </Ribbon>
+            </Ribbon> 
             <NavBar>
                 <div>Instant solution to your development needs. Call or chat now!</div>
             </NavBar>
+            */}
             <SectionHeader {...props} />
             <SectionDeveloper />
             <SectionSourceCode />

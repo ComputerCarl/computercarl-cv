@@ -26,8 +26,8 @@ const Cover = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  min-height: 650px;
-  background-size: cover;
+  min-height: 550px;
+  background-size: 100% 100%;
   background-image: url(${svgBgImage});
   background-repeat: no-repeat;
   z-index: -1;

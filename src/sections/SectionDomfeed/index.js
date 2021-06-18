@@ -33,7 +33,7 @@ const SectionDomfeed = props => {
                         I made <a href="https://domfeed.com" target="_new">this project</a> as a domain name suggestion tool and platform to sell premium domain names.
                         It was written in React JS and utilizes Gatsby JS for dynamic site generation.
                     </p><p>
-                        There is also a technical <a href="https://domfeed.com/how-to-start-a-blog" target="_new">article</a> written by me explaining how to sign up for, and customize WordPress.
+                        There is also a technical <a href="https://domfeed.com/how-to-start-a-blog" target="_new">article</a> written by me explaining how to sign up for and customize WordPress.
                     </p><p>
                         The UX was designed and implemented by me without the use of UI libraries.
                         My original design idea was bold and functional, but decided on the second draft to design a softer palette.

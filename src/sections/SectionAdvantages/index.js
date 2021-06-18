@@ -22,7 +22,7 @@ const SectionAdvantages = () => {
                 <Col span={8}>
                     <img src="/images/a1.jpg" />
                     <h2>English Native</h2>
-                    <p>Born and raised on Long Island, N.Y, I had the advantage of learning English since birth, and have an expert knowledge in this <i>lingua franca</i>.</p>
+                    <p>Born and raised on Long Island, N.Y, I had the advantage of learning English since birth, and have a proficient knowledge in this <i>lingua franca</i>.</p>
                 </Col>
             </Row>
         </Contained>

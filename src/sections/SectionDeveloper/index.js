@@ -9,13 +9,13 @@ const SectionDeveloper = () => {
     return (<section id="developer">
         <Contained>
             <Row type="flex" justify="space-between" align="center">
-                <Col span={1}>
+                {/* <Col span={1}>
                     <img src={ServiceGuy} style={{ height: '300px' }} alt="Handsome man, waving. Not what Carl looks like, but imagine." />
-                </Col>
+                </Col> */}
                 <Col span={4}>
                     <h1 style={{ fontWeight: 'bold', textAlign: 'center' }}>
-                        Carl Mann, Software Developer
-    </h1>
+                        Carl Mann, Solutions Architect
+                    </h1>
                     <img src={imgDevBg} style={{
                         width: '500px',
                         position: 'absolute',
@@ -24,21 +24,23 @@ const SectionDeveloper = () => {
                         marginTop: '-125px',
                         marginLeft: '75px'
                     }} alt="" />
-                    <Row type="flex" justify="space-between" align="center">
+                    <Row type="flex" justify="space-between" align="top">
                         <Col span={8}>
                             <p>
-                                Are you looking to create your next product using modern software development?
-        </p><p>
-                                My expertise in JavaScript, Node JS, React JS, Gatsby JS, and a whole lot more JS's (JavaScript libraries) can help you not only get your product to market faster, but with less errors and more resiliency, while also improving usability and functionality.
-      </p>
+                                Technically, I'm a full-stack developer specializing in MERN (Mogo-Express-React-Node) and Jamstack (Gatsby, headless CMS, RESTful API).
+                            </p><p>
+                                However, labeling oneself as a software developer creates a problem – the need to produce software. There's already so much existing, working, tested, and supported software – some free for the taking.
+                            </p><p>
+                                How would you like to start with your project 75% finished and paid?
+                            </p>
                         </Col>
                         <Col span={8}>
                             <p>
-                                JavaScript, really?
-    </p><p>
-                                Almost since web development became a thing, JavaScript (JS) has been in the background wiring web apps to make stuff happen.
-                                HTML provides the structure, CSS provides styling, and JS provides not only the (advanced) interactivity – but with the advent of Node (server-side JS), now JS can power the entire stack.
-    </p>
+                                Thinking in solutions changes the paradigm from code development to project development.
+                                No need to reinvent the wheel by engineering the content-management system, authentication & authorization "programs", or any other working solutions already available for you no use now.
+                            </p><p>
+                                For the other 25% – the unique things your application does – my expertise in JavaScript, Node JS, React JS, Gatsby JS, and a whole lot more JS's (JavaScript libraries) can help you not only get your product to market faster, but with fewer errors and more resiliency, while also improving usability and functionality.
+                            </p>
                         </Col>
                     </Row>
                 </Col>
